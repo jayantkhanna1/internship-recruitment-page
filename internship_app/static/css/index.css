@@ -1,0 +1,421 @@
+/* Styling for home */
+#home{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 70px;
+    display: flex;
+}
+#home h2{
+    font-family: "Roboto"!important;
+    margin-top: 200px;
+    font-size: 80px;
+    line-height: 115%;
+    color: #fff;
+    max-width: 800px;
+}
+#home img{
+    height: 600px;
+    width: 600px;
+}
+#appstore{
+    cursor: pointer;
+    margin-top: -20px;
+    width: 10%;
+    padding: 20px;
+    margin-left: 5%;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 29px;
+    display: block;
+    font-family: "Roboto"!important;
+    border-radius: 25px;
+    background: linear-gradient(270.01deg,#f548a0 .01%,#f57c35);
+}
+#downlaod_app{
+    font-family: "Roboto"!important;
+    font-size: 21px;
+    color: hsla(0,0%,100%,.7);
+}
+
+/* About us styling */
+#aboutus h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.27em;
+}
+#aboutus{
+    margin-top:120px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.flexbox_style{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutus_data{
+    cursor: pointer;
+    padding: 20px;
+    padding-top: 35px;
+    margin-right: 20px;
+    border-radius: 25px;
+    color: white;
+    border: 1px solid #2f2e43;
+    width: 90%;
+    height: 100%;
+}
+.aboutus_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: hsla(0,0%,100%,.1);
+}
+.aboutus_img img{
+    height: 40px;
+    width: 40px;
+    margin-top: 7px;
+    margin-left: 12px;  
+}
+.aboutus_heading{
+    font-family: "Roboto"!important;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 26px 0 20px;
+}
+.aboutus_text{
+    font-family: "Roboto"!important;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #fff;
+    padding: 26px 0 20px;
+}
+.aboutus_data:hover{
+    background-image: linear-gradient(270.01deg,#f548a0 .01%,#f57c35);
+}
+/* Testimonials */
+#testimonials{
+    margin-top: 300px;
+    margin-left: 10%;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position:0;
+    height: 750px;
+}
+#testimonials_heading{
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+    font-size: 70px;
+    color: #ff2759;;
+}
+#testimonials_box{
+    z-index: 1000;
+    background-color: #101326;
+    width: 60%;
+    border-radius: 25px;
+    height: 520px;
+    box-shadow:20px 10px 40px #000000;
+}
+#testimonials_image{
+    margin-left: -25%;
+}
+#quotes img{
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 60px;
+    width: 60px;
+}
+#testimonials_text{
+    color: white;
+    font-size: 25px;
+    line-height: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 170px;
+    margin-right: 50px;
+}
+#testimonials_people{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+#other_people{
+    display: flex;
+}
+#people_main img{
+    border: 2.5px solid blueviolet;
+}
+#other_people img{
+    margin-right: 20px;
+    cursor: pointer;
+}
+#testimonials_people img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}  
+#testimonials_details{
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 17px;
+}
+#testimonials_name,#testimonials_loc{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/* product */
+#product{
+    margin-top: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#product_header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#product_header h2{
+    font-family: "Roboto"!important;
+    font-weight: 500;
+    font-size: 80px;
+    padding: 26px 0 20px;
+}
+.arrow{
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #3c3649;
+    margin-top: 35px;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#product_images{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#product_images img{
+    height: 400px;
+    width: 350px;
+}
+
+/* Contact us styling */
+#contact{
+    margin-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 70px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+#contact-heading{
+    margin-bottom: 70px;
+}
+#contact-heading h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#contact-info{
+    display: flex;
+    
+}
+#contact-info-left,#contact-info-right{
+    flex-grow: 1;
+    background-color: #101326;
+    box-shadow: 10px 10px 19px #000000;
+    padding: 20px;
+    border-radius: 6px;
+}
+#contact-info-left{
+    max-width: 35%;
+    margin-right: 40px;
+}
+#contact-info-left-img{
+    height: 260px;
+    width: 420px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+#contact-info-left-img img {
+    height: 260px;
+    width: 420px;
+    transition: transform .5s ease;
+  }
+#contact-info-left:hover img {
+    transform: scale(1.1);
+}
+#contact-info-left h2{
+    margin-bottom: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#contact-info-left p,#contact-info-left a{
+    margin-bottom: 40px;
+    color: #878e99;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#contact-info-left a>span{
+    color: #c4cfde;
+}
+#contact-info-left a>span:hover{
+    color: #f02981;
+    transition: 0.5s;
+}
+#contact-me-links{
+    display: flex;
+}
+#contact-info-right{
+    padding-top: 50px;
+}
+#contact-form-flex{
+    display: flex;
+}
+.contact-label{
+    font-size: 14px;
+    color: #a0a8b3;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+}
+.contact-input{
+    outline: none;
+    background-color: #101326;
+    border-radius: 6px;
+    height: 55px;
+    border: 2px solid #191b1e;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #c4cfde;;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+#name{
+    width: 70%;
+    margin-right: 30px;
+}
+.contact-input:focus{
+    transition: 0.3s;
+    border: 2px solid #fe1f4f;
+}
+#message{
+    min-height: 200px;
+}
+#contact-me-submit{
+    text-decoration: none;
+    box-shadow:10px 10px 19px #000000;
+    background:#101326;
+    color: #f02981;
+    padding: 20px 60px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 90px;
+    font-family: sans-serif;
+    text-align: center;
+    transition: top ease 0.7s;
+    position: relative;
+    top: 0;
+    width: 95%;
+    outline: none;
+}
+#contact-me-submit:hover{
+    top: -7px;
+    background:linear-gradient(to left top, #212428, #16181c);
+}
+#message{
+    padding-top: 11px;
+}
+#error{
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #3c2023;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: red;
+    display: none;
+    font-family: sans-serif;
+}
+#submitted{
+    display: none;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #273f31;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(0, 255, 0);
+    font-family: sans-serif;
+}
+
+#social-media{
+    margin-top: 40px;
+}
+#insta,#linkedln,#github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 6px;
+    height: 35px;
+    cursor: pointer;
+    width:35px;
+    color: #c4cfde;
+    padding: 15px;
+    background:#101326;
+    position: relative;
+    top: 0px;
+    transition: 0.5s ease top;
+    margin-right: 20px;
+    box-shadow: 10px 10px 19px #000000;
+}
+#insta:hover,#linkedln:hover,#github:hover{
+    top: -7px;
+    background:linear-gradient(to left top, #212428, #16181c);
+}
+#companylogo_footer,#footer_logo{
+    color: white;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+#social_links a>i{
+    color: white;
+    margin-right: 20px;
+}

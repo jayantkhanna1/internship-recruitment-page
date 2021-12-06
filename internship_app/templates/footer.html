@@ -1,0 +1,48 @@
+{%load static%}
+{%block content1%}
+{%load static%}
+{%block content2%}
+<div id="footer">
+    <a href="home" id="footer_logo"><div class="companyname" id="companylogo_footer">Coursify</div></a>
+    <div class="footer_botom">
+            <div class="footer_links_group" id="footer_links_company">
+                <h6>Company</h6>
+                <a href="">About us</a>
+                <a href="">Blog</a>
+                <a href="">Our Team</a>
+                <a href="">Reviews</a>
+                <a href="workerlogin">Careers</a>
+            </div>
+            <div class="footer_links_group" id="footer_links_contact">
+                <h6>Contact us</h6>
+                <a href="">Phone</a>
+                <a href="">Email</a>
+                <a href="">Our office</a>
+                <a href="">Partner with us</a>
+            </div>
+            <div class="footer_links_group" id="footer_links_legal">
+                <h6>Legal</h6>
+                <a href="">Terms and condition</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Fraud</a>
+                <a href="">Anti Discriminatory Policy</a>
+            </div>
+        <div class="footer_social">
+            <h6>Social links</h6>
+            <div id="social_links">
+                <a href=""><i class="fab fa-2x fa-instagram"></i></a>
+                <a href=""><i class="fab fa-2x fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-2x fa-twitter"></i></a>
+            </div>
+            <div id="newsletter">
+                <form action="" id="newsletter_form" enctype="multipart/form-data">
+                    {%csrf_token%}
+                    <input id="newsletter_email" type="email" placeholder="Subscribe to out news letter">
+                    <input id="newsletter_button" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
+{%endblock%}

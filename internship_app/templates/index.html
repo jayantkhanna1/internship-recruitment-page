@@ -1,0 +1,164 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Coursify</title>
+
+    <!-- Local styling -->
+    <link rel="stylesheet" href="{%static 'css/index.css'%}">
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+     <!-- Font awesome -->
+     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+     <script src="{% static 'fontawesome_free/js/all.min.js' %}"></script>
+
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        {%include 'header.html'%}
+        {%block content1%}
+        {%endblock%}
+    </div>
+    <div id="home" data-aos="fade-up">
+        <h2>Build your Next&nbsp;<span style="color: #ff2759;text-decoration: underline;">Product</span>&nbsp;with Deski.</h2>
+        <img src="{%static 'images/homeside.png'%}" alt="">
+    </div>
+    <div id="appstore" data-aos="fade-up">
+        <span id="downlaod_app">Download on </span> <br>
+        AppStore
+    </div>
+    <div id="aboutus" data-aos="fade-up">
+        <h2>Check why you&nbsp;<span style="color: #ff2759;text-decoration: underline;">Should</span>&nbsp;Choose us</h2>
+        <div class="flexbox_style">
+            <div class="aboutus_data">
+                <div class="aboutus_img">
+                    <img src="{%static 'images/arrow.svg'%}" alt="">
+                </div><br>
+                <h3 class="aboutus_heading">Easily Customizable</h3>
+                <p class="aboutus_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam hic assumenda veniam repellat temporibus magni!</p>
+            </div>
+            <div class="aboutus_data">
+                <div class="aboutus_img">
+                    <img src="{%static 'images/stack.svg'%}" alt="">
+                </div><br>
+                <h3 class="aboutus_heading">Easily Customizable</h3>
+                <p class="aboutus_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam hic assumenda veniam repellat temporibus magni!</p>
+            </div>
+            <div class="aboutus_data">
+                <div class="aboutus_img">
+                    <img src="{%static 'images/trust.svg'%}" alt="">
+                </div><br>
+                <h3 class="aboutus_heading">Easily Customizable</h3>
+                <p class="aboutus_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam hic assumenda veniam repellat temporibus magni!</p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up">
+        {%include 'testimonials.html'%}
+        {%block content2%}
+        {%endblock%}
+    </div>
+    <div id="product" data-aos="fade-up">
+        <div id="product_header">
+            <h2>Our <span style="color: #ff2759;text-decoration: underline;">Products</span></h2>
+            <div id="arrows" style="display: flex;">
+                <div class="arrow" id="leftarrow"><p><</p></div>
+                <div class="arrow" id="rightarrow"><p>></p></div>
+            </div>
+        </div>
+        <div id="product_images">
+            <img src="{%static 'images/product1.png'%}" alt="">
+            <img src="{%static 'images/product2.png'%}" alt="">
+            <img src="{%static 'images/product3.png'%}" alt="">
+        </div>
+    </div>
+    <!-- Contact me  -->
+    <div id="contact" data-aos="fade-up">
+        <div id="contact-heading" data-aos="fade-up">
+            <h2>Connect with&nbsp;<span style="color: #ff2759;text-decoration: underline;">us</span>&nbsp;</h2>
+        </div>
+        <div id="contact-info" data-aos="fade-up">
+            <div id="contact-info-left">
+                <div id="contact-info-left-img">
+                    <img src="{%static 'images/product4.png'%}" alt="">
+                </div>
+                <h2>Coursify</h2>
+                <p>Recruitment startup</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
+                <a href="tel:+918755429982">Phone: <span>+91 132456789</span></a><br>
+                <a href="mailto:jayantkhanna3105@gmail.com">E-mail: <span>iammail@gmail.com</span></a>
+                <p id="social-media">Find us on</p>
+                <div id="contact-me-links">
+                    <div id="insta" onclick="insta()"><i class="fab fa-instagram"></i></div>
+                    <div id="github" onclick="github()"><i class="fab fa-github"></i></div>
+                    <div id="linkedln" onclick="linkedln()"><i class="fab fa-linkedin-in"></i></div>
+                </div>
+            </div>
+            <div id="contact-info-right">
+               <form action="home" method="POST" onsubmit="return check_form()" enctype="multipart/form-data">
+                {%csrf_token%}
+                    <div id="contact-form-flex">
+                        <div>
+                            <label class="contact-label" for="name">YOUR NAME</label><br>
+                            <input class="contact-input" autocomplete="off" type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label class="contact-label" for="number">PHONE NUMBER</label><br>
+                            <input class="contact-input" autocomplete="off" type="number" name="number" id="number">
+                        </div>
+                    </div>
+                    <label class="contact-label" for="email-form">EMAIL</label><br>
+                    <input autocomplete="off" class="contact-input" type="email" name="email" id="email-form"><br>
+                    <label class="contact-label" for="subject">SUBJECT</label><br>
+                    <input autocomplete="off" class="contact-input" type="text" name="subject" id="subject"><br>
+                    <label class="contact-label" for="message">MESSAGE</label><br>
+                    <textarea class="contact-input" name="message" id="message" cols="30" rows="10"></textarea><br>
+                    <input type="submit" id="contact-me-submit" value="Send Message">
+                </form>
+                <div id="error">
+                    
+                </div>
+                <div id="submitted">
+                    {%for message in messages%}
+                    {{message}}
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        {%include 'footer.html'%}
+        {%block content3%}
+        {%endblock%}
+    </div>
+
+
+     <!-- AOS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init();
+         AOS.init({
+             duration: 900,
+             offset: 200,
+             once:true,
+         })
+     </script>
+    
+</body>
+</html>
